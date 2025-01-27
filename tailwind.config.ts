@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -18,6 +19,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["PT Serif", "serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -33,7 +37,7 @@ export default {
           foreground: "#111111",
         },
         accent: {
-          DEFAULT: "#22c55e",
+          DEFAULT: "#e66465",
           foreground: "#ffffff",
         },
         muted: {
@@ -67,5 +71,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [animate],
 } satisfies Config;

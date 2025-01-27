@@ -29,12 +29,12 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-bold text-primary mb-4"
+            className="text-3xl md:text-4xl font-bold font-serif text-primary mb-4"
           >
             Hogyan dolgozunk együtt?
           </motion.h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Hogyan dolgozunk együtt?
+            3 egyszerű lépés a sikeres nyomtatáshoz.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -51,7 +51,7 @@ const Services = () => {
                 {index + 1}
               </div>
               <div className="text-accent mb-4 mt-2">{approach.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{approach.title}</h3>
+              <h3 className="text-xl font-semibold font-serif mb-2">{approach.title}</h3>
               <p className="text-gray-600">{approach.description}</p>
             </motion.div>
           ))}
