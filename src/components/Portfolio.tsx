@@ -1,20 +1,23 @@
 import { motion } from "framer-motion";
+import nyirfa from "../assets/1.png";
+import isb from "../assets/2.png";
+import oltokozpont from "../assets/3.png";
 
 const projects = [
   {
     title: "Brand Identity",
     category: "Print Design",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80",
+    image: nyirfa,
   },
   {
     title: "Marketing Materials",
     category: "Digital Print",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=600&q=80",
+    image: isb,
   },
   {
     title: "Corporate Stationery",
     category: "Print Design",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=600&q=80",
+    image: oltokozpont,
   },
 ];
 
@@ -30,10 +33,10 @@ const Portfolio = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Featured Work
+            Akiknek már segítettünk
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore our latest projects and see how we bring ideas to life
+            Nézze meg, hogyan támogattuk ügyfeleinket egyedi nyomtatási megoldásokkal.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

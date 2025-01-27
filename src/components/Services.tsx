@@ -4,18 +4,18 @@ import { Search, Palette, Truck } from "lucide-react";
 const approaches = [
   {
     icon: <Search className="w-8 h-8" />,
-    title: "Discovery",
-    description: "We begin by understanding your needs, goals, and vision to create the perfect printing solution",
+    title: "Konzultáció és igényfelmérés",
+    description: "Első lépésként felmérjük, mire van szüksége. Beszéljük át a céljait, az anyagok típusát, és az elképzeléseit, hogy biztosak legyünk abban, hogy pontosan azt kapja, amire szüksége van.",
   },
   {
     icon: <Palette className="w-8 h-8" />,
-    title: "Design",
-    description: "Our expert team crafts your ideas into stunning, print-ready designs that capture your brand",
+    title: "Tervezés és előkészítés",
+    description: "A tervezéstől a színek pontos beállításáig mindent elintézünk. Ha még nincs kész terve, segítünk abban is, hogy az Ön márkájához illeszkedő, figyelemfelkeltő designokat készítsünk.",
   },
   {
     icon: <Truck className="w-8 h-8" />,
-    title: "Delivery",
-    description: "We ensure high-quality printing and timely delivery of your materials to meet your deadlines",
+    title: "Nyomtatás és kiszállítás",
+    description: "Miután minden készen áll, a legmodernebb digitális technológiával nyomtatunk. A gyors, megbízható és pontos teljesítés garantált. Az elkészült anyagokat gyorsan kiszállítjuk a kívánt címre.",
   },
 ];
 
@@ -31,10 +31,10 @@ const Services = () => {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl font-bold text-primary mb-4"
           >
-            Our Approach
+            Hogyan dolgozunk együtt?
           </motion.h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            A simple three-step process to bring your printing projects to life
+            Hogyan dolgozunk együtt?
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
