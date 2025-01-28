@@ -13,7 +13,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename='/printify-landing-portal/'>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/projektek/nyirfacukor" element={<Nyirfacukor />} />
