@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // base: "/printify-landing-portal/",
+  base: "/printify-landing-portal/",
 }));
