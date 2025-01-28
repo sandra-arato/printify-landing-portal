@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import nyirfa from "../assets/1.png";
 import isb from "../assets/2.png";
 import oltokozpont from "../assets/3.png";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -47,30 +48,31 @@ const Portfolio = () => {
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <motion.a
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative overflow-hidden"
-              href={`/projektek/${project.keyword.toLowerCase()}`}
-            >
-              <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300 "
-                />
-              </div>
-              <div>
-                <div className="py-8">
-                  <span className="bg-black text-white text-sm font-medium mb-4 p-2">{project.category}</span>
-                  <h3 className="text-xl font-semibold inline font-serif mx-2 my-2">{project.title}</h3>
-                  <p className="text-gray-600 font-display italic my-2 text-2xl group-hover:underline">{project.description}</p>
+            <Link to={`/projektek/${project.keyword}`} key={index} className="group relative overflow-hidden">
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="group relative overflow-hidden"
+              >
+                <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300 "
+                  />
                 </div>
-              </div>
-            </motion.a>
+                <div>
+                  <div className="py-8">
+                    <span className="bg-black text-white text-sm font-medium mb-4 p-2">{project.category}</span>
+                    <h3 className="text-xl font-semibold inline font-serif mx-2 my-2">{project.title}</h3>
+                    <p className="text-gray-600 font-display italic my-2 text-2xl group-hover:underline">{project.description}</p>
+                  </div>
+                </div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>

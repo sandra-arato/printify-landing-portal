@@ -34,12 +34,12 @@ const Index = () => {
           </motion.div>
         </div>
       </section>
-      <div>
-        <section>
-          <p className="px-8 py-16 font-serif text-lg text-gray-600 max-w-2xl">A Nyírfacukor Kft. egy magyar vállalat, amely főként nyírfacukor (xilit) és egyéb alternatív édesítőszerek forgalmazásával foglalkozik. A cég célja, hogy egészségesebb alternatívákat kínáljon a hagyományos cukorral szemben, különös figyelmet fordítva a természetes alapanyagok felhasználására.</p>
-          <div className="px-8 mb-16">
+      <div className="flex flex-col md:flex-row">
+        <section className="flex md:inline-flex flex-col w-full">
+          <p className="flex px-8 py-16 font-serif text-lg text-gray-600 max-w-2xl">A Nyírfacukor Kft. egy magyar vállalat, amely főként nyírfacukor (xilit) és egyéb alternatív édesítőszerek forgalmazásával foglalkozik. A cég célja, hogy egészségesebb alternatívákat kínáljon a hagyományos cukorral szemben, különös figyelmet fordítva a természetes alapanyagok felhasználására.</p>
+          <div className="flex px-8 mb-16 flex-col">
             <h2 className="text-2xl font-semibold font-serif text-gray-600 my-8">A feladat</h2>
-            <p className="text-gray-600 max-w-2xl">
+            <p className="text-gray-600 max-w-2xl flex-col">
               <ul className="list-disc list-inside">
                 <li className="py-2 marker:py-1">A megrendelő külső okok miatt szoros határidővel rendelkezett, és gyors, de hatékony és magas minőségű megoldásra volt szüksége.</li>
                 <li className="py-2 marker:py-1">A WordPress alapú weboldalt részesítették előnyben, amelyhez WPEngine-t szerettek volna használni.</li>
@@ -48,7 +48,7 @@ const Index = () => {
               </ul>
             </p>
             <h2 className="text-2xl font-semibold font-serif text-gray-600 my-8">A megoldás</h2>
-            <p className="text-gray-600 max-w-2xl">
+            <p className="text-gray-600 max-w-2xl flex-col">
               <ul className="list-disc list-inside">
                 <li className="py-2 marker:py-1">A weboldal teljes átalakítása, beleértve a design, a tartalom és a funkcionalitások újragondolását.</li>
                 <li className="py-2 marker:py-1">Az új weboldal elkészítése a WordPress alapú Divi Builder segítségével, amely lehetővé tette a gyors és hatékony munkát.</li>
@@ -58,9 +58,10 @@ const Index = () => {
             </p>
           </div>
         </section>
-        <section>
+        
+        <section className="flex md:inline-flex md:w-1/2">
           <div className="px-8 py-16">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 gap-4">
              
               <img src={car2} alt="Gallery Image 4" className="w-full h-auto object-cover" />
 
