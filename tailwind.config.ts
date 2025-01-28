@@ -37,7 +37,7 @@ export default {
           foreground: "#111111",
         },
         accent: {
-          DEFAULT: "#e66465",
+          DEFAULT: "rgb(102 241 205)",
           foreground: "#ffffff",
         },
         muted: {

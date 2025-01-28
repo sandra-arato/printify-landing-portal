@@ -50,7 +50,7 @@ const Services = () => {
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold">
                 {index + 1}
               </div>
-              <div className="text-accent mb-4 mt-2">{approach.icon}</div>
+              <div className="text-rose-400 mb-4 mt-2">{approach.icon}</div>
               <h3 className="text-xl font-semibold font-serif mb-2">{approach.title}</h3>
               <p className="text-gray-600">{approach.description}</p>
             </motion.div>

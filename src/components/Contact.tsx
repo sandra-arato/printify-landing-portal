@@ -1,5 +1,7 @@
+import Index from "@/pages/Index";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -21,43 +23,6 @@ const Contact = () => {
           </div>
         </motion.div>
         <div className="max-w-xl mx-auto">
-          {/* <motion.form
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="space-y-6"
-          >
-            <div>
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
-              />
-            </div>
-            <div>
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
-              />
-            </div>
-            <div>
-              <textarea
-                placeholder="Project Details"
-                rows={4}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
-              />
-            </div>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-full bg-accent text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center space-x-2 hover:bg-accent/90 transition-colors"
-            >
-              <span>Send Message</span>
-              <Send className="w-4 h-4" />
-            </motion.button>
-          </motion.form> */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
               <h3 className="text-xl font-semibold mb-4 font-serif">Címünk</h3>
@@ -71,9 +36,9 @@ const Contact = () => {
             <div>
               <h3 className="text-xl font-semibold font-serif mb-4">Linkek</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-300 hover:text-white">Főoldal</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white">Rólunk</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white">Portfólió</a></li>
+                <li><Link to={'/'} className="text-gray-300 hover:text-white">Főoldal</Link></li>
+                <li><Link to={'/rolunk'} className="text-gray-300 hover:text-white">Rólunk</Link></li>
+                <li><Link to={'/projektek'} className="text-gray-300 hover:text-white">Portfólió</Link></li>
               </ul>
             </div>
             <div>
