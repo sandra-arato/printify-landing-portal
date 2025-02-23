@@ -15,7 +15,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={import.meta.env.DEV ? "/" : "/printify-landing-portal/"}>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/projektek/nyirfacukor" element={<Nyirfacukor />} />
