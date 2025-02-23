@@ -1,13 +1,30 @@
-import Index from "@/pages/Index";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Handle smooth scrolling for hash links
+  const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    
+    if (location.pathname !== '/') {
+      await navigate(`/#${id}`);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+    }
+  };
+
   return (
     <section className="py-24 bg-slate-200 opacity-90 mix-blend-multiply
-                      before:content-[''] before:absolute before:inset-0 
-                      before:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMSI+PC9yZWN0Pgo8L3N2Zz4=')] 
-                      before:opacity-80 text-slate-800 px-4" id="contact">
+                       text-slate-800 px-4" id="contact">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,7 +33,7 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl  font-serif font-bold mb-4">Készen áll a növekedésre?</h2>
+          <h2 className="text-black text-3xl md:text-4xl  font-serif font-bold mb-4">Készen áll a növekedésre?</h2>
           <p className="text-gray-800 max-w-2xl mx-auto">
             Lépjen kapcsolatba velünk, és kezdjük el a közös munkát még ma!
           </p>
@@ -38,9 +55,15 @@ const Contact = () => {
             <div>
               <h3 className="text-xl font-semibold font-serif mb-4">Linkek</h3>
               <ul className="space-y-2">
-                <li><Link to="/" className="text-gray-800 hover:text-white">Főoldal</Link></li>
-                <li><Link to="/rolunk" className="text-gray-800 hover:text-white">Rólunk</Link></li>
-                <li><Link to="/referenciak" className="text-gray-800 hover:text-white">Referenciák</Link></li>
+                <Link to="/" className="text-gray-800 hover:text-primary block">Főoldal</Link>
+                <Link to="/rolunk" className="text-gray-800 hover:text-primary block">Rólunk</Link>
+                <a 
+                  href="#portfolio"
+                  onClick={(e) => handleClick(e, 'portfolio')}
+                  className="text-gray-800 hover:text-primary block"
+                >
+                  Referenciák
+                </a>
               </ul>
             </div>
             <div>

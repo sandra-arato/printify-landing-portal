@@ -15,6 +15,8 @@ const Rolunk = () => {
 
   useEffect(() => {
     document.title = "Rólunk | Vinyl Grafik Stúdió";
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
   }, []);
 
   return (
