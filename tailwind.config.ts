@@ -21,6 +21,9 @@ export default {
     extend: {
       fontFamily: {
         display: ["PT Serif", "serif"],
+        body: ["Figtree", "sans-serif"],
+        sans: ["Figtree", "sans-serif"],
+        serif: ["PT Serif", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -29,15 +32,15 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#111111",
+          DEFAULT: "#3561df",
           foreground: "#ffffff",
         },
         secondary: {
           DEFAULT: "#f8f9fa",
-          foreground: "#111111",
+          foreground: "#333f41",
         },
         accent: {
-          DEFAULT: "rgb(102 241 205)",
+          DEFAULT: "#e41923",
           foreground: "#ffffff",
         },
         muted: {

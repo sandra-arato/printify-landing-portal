@@ -6,9 +6,10 @@ import pult from "../assets/DSCF3446.jpg";
 import pult2 from "../assets/DSCF3447.jpg";
 import car from "../assets/DSCF3547.jpg";
 import car2 from "../assets/DSCF3634.jpg";
+import Navigation from "../components/Navigation";
 
 
-const Index = () => {
+const Nyirfacukor = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -22,6 +23,11 @@ const Index = () => {
 
   return (
     <div className="">
+      <Navigation />
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-accent origin-left z-50"
+        style={{ scaleX }}
+      />
       <section className="h-40 md:h-96 flex items-center justify-start relative overflow-hidden px-4 py-24 bg-accent">
         <div className="max-w-7xl mx-auto w-full">
           <motion.div
@@ -79,4 +85,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Nyirfacukor;
