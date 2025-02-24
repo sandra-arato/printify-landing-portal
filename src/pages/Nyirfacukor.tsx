@@ -26,7 +26,6 @@ const Nyirfacukor = () => {
       <MetaTags 
         title="Nyírfacukor Projekt"
         description="Autógrafika, kínáló pultok és prototípusok készítése a Nyírfacukor számára. Egyedi megjelenés tervezése és kivitelezése."
-        image={pult}
         path="/projektek/nyirfacukor"
       />
       <Navigation />

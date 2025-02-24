@@ -29,7 +29,6 @@ const Oltokozpont = () => {
       <MetaTags 
         title="Oltóközpont Projekt"
         description="Konténer dekoráció és információs rendszer kialakítása az oltóközpontok számára. Professzionális vizuális kommunikációs megoldások a pandémia idején."
-        image={olto1}
         path="/projektek/oltokozpont"
       />
       <Navigation />

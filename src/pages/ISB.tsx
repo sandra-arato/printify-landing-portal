@@ -29,7 +29,6 @@ const ISB = () => {
       <MetaTags 
         title="International School of Budapest"
         description="Komplex vizuális kommunikációs rendszer kialakítása az ISB számára. Modern oktatási környezet megteremtése dekorációs elemekkel, útbaigazító rendszerekkel."
-        image={isb1}
         path="/projektek/international-school-of-budapest"
       />
       <Navigation />

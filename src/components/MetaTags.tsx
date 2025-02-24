@@ -3,14 +3,13 @@ import { Helmet } from "react-helmet-async";
 interface MetaTagsProps {
   title: string;
   description: string;
-  image?: string;
   path: string;
 }
 
-const MetaTags = ({ title, description, image, path }: MetaTagsProps) => {
+const MetaTags = ({ title, description, path }: MetaTagsProps) => {
   const siteUrl = "https://vinylgrafik.hu";
   const fullUrl = `${siteUrl}${path}`;
-  const defaultImage = "/og-image.jpg"; // fallback image
+  const ogImage = "/og-image.png"; // Using consistent og-image for all pages
 
   return (
     <Helmet>
@@ -22,14 +21,14 @@ const MetaTags = ({ title, description, image, path }: MetaTagsProps) => {
       <meta property="og:url" content={fullUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image || defaultImage} />
+      <meta property="og:image" content={`${siteUrl}${ogImage}`} />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={fullUrl} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={image || defaultImage} />
+      <meta property="twitter:image" content={`${siteUrl}${ogImage}`} />
 
       {/* Additional SEO tags */}
       <link rel="canonical" href={fullUrl} />
