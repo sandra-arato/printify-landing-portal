@@ -3,13 +3,13 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
 import MetaTags from "@/components/MetaTags";
-import olto1 from "../assets/Covid Containers (1).jpg";
-import olto2 from "../assets/Covid Containers (2).jpg";
-import olto3 from "../assets/Covid Containers Busz.jpg";
-import olto4 from "../assets/Covid Containers Busz (1).jpg";
-import olto5 from "../assets/Covid Containers Buses.jpg";
-import olto6 from "../assets/Opel Covid Containers.jpg";
-import olto7 from "../assets/Opel Covid Containers (1).jpg";
+import olto1 from "../assets/oltokozpont-konter-1.jpg";
+import olto2 from "../assets/oltokozpont-konter-2.jpg";
+import olto3 from "../assets/oltokozpont-busz-1.jpg";
+import olto4 from "../assets/oltokozpont-busz-2.jpg";
+import olto5 from "../assets/oltokozpont-buszok.jpg";
+import olto6 from "../assets/oltokozpont-opel-1.jpg";
+import olto7 from "../assets/oltokozpont-opel-2.jpg";
 
 const Oltokozpont = () => {
   const { scrollYProgress } = useScroll();

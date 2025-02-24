@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
-import pult from "../assets/DSCF3446.jpg";
-import pult2 from "../assets/DSCF3447.jpg";
-import car from "../assets/DSCF3547.jpg";
-import car2 from "../assets/DSCF3634.jpg";
+import pult from "../assets/nyirfacukor-pult-1.jpg";
+import pult2 from "../assets/nyirfacukor-pult-2.jpg";
+import car from "../assets/nyirfacukor-auto-1.jpg";
+import car2 from "../assets/nyirfacukor-auto-2.jpg";
 import MetaTags from "@/components/MetaTags";
 
 const Nyirfacukor = () => {
@@ -56,12 +56,12 @@ const Nyirfacukor = () => {
 
         {/* Right image gallery - now visible on mobile below content */}
         <div className="lg:relative">
-          <div className="lg:sticky lg:top-24 h-screen p-8 py-24 bg-white">
+          <div className="lg:sticky lg:top-12 min-h-screen p-8 py-24 bg-white">
             <motion.div
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7 }}
-              className="h-full grid grid-cols-2 gap-4 overflow-hidden"
+              className="grid grid-cols-2 gap-4"
             >
               <div className="space-y-4">
                 <img 

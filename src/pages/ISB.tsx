@@ -2,13 +2,13 @@ import { useEffect } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
-import isb1 from "../assets/ISB Iskola (1).jpg";
-import isb2 from "../assets/ISB Iskola (2).jpg";
-import isb3 from "../assets/ISB Iskola (3).jpg";
-import isb4 from "../assets/ISB Iskola (4).jpg";
-import isb5 from "../assets/ISB Iskola Sept 10.jpg";
-import isb6 from "../assets/ISB Iskola Sept 14 (1).jpg";
-import isb7 from "../assets/ISB Iskola Sept 14 (2).jpg";
+import isb1 from "../assets/isb-iskola-1.jpg";
+import isb2 from "../assets/isb-iskola-2.jpg";
+import isb3 from "../assets/isb-iskola-3.jpg";
+import isb4 from "../assets/isb-iskola-4.jpg";
+import isb5 from "../assets/isb-iskola-5.jpg";
+import isb6 from "../assets/isb-iskola-6.jpg";
+import isb7 from "../assets/isb-iskola-7.jpg";
 import MetaTags from "@/components/MetaTags";
 
 const ISB = () => {
