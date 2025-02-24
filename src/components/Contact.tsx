@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Contact = () => {
@@ -33,50 +34,84 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-black text-3xl md:text-4xl  font-serif font-bold mb-4">Készen áll a növekedésre?</h2>
-          <p className="text-gray-800 max-w-2xl mx-auto">
+          <h2 className="text-accent text-3xl md:text-4xl  font-serif font-bold mb-4">Készen áll a növekedésre?</h2>
+          <p className="text-slate-800 max-w-md mx-auto text-lg md:text-2xl  mb-12 font-medium">
             Lépjen kapcsolatba velünk, és kezdjük el a közös munkát még ma!
           </p>
-          <div className="p-8">
-            <h3 className="text-center text-accent text-3xl md:text-4xl font-bold ">+36 1 218 14 75</h3>
-          </div>
         </motion.div>
         <div className="max-w-xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            <div>
-              <h3 className="text-xl font-semibold mb-4 font-serif">Címünk</h3>
-              <p className="text-gray-800 underline">
-                <a href="https://maps.app.goo.gl/bieit55ZaYeatoB36" target="_blank" >
-                  Vörösmarty u. 28b<br />
-                  1201 Budapest
-                </a>
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold font-serif mb-4">Linkek</h3>
-              <ul className="space-y-2">
-                <Link to="/" className="text-gray-800 hover:text-primary block">Főoldal</Link>
-                <Link to="/rolunk" className="text-gray-800 hover:text-primary block">Rólunk</Link>
-                <a 
-                  href="#portfolio"
-                  onClick={(e) => handleClick(e, 'portfolio')}
-                  className="text-gray-800 hover:text-primary block"
-                >
-                  Referenciák
-                </a>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold font-serif mb-4">Facebook</h3>
-              <div className="flex justify-center md:justify-start">
-                <a href="https://www.facebook.com/VinylGrafikStudio" className="text-gray-800 hover:text-white m-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.0" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" fill="#333"><path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"></path></svg>
-                </a>
+        </div>
+      </div>
+      <div className="grid md:grid-cols-2 gap-12 items-start  px-4 lg:px-24">
+            {/* Contact Information */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="space-y-8 self-center"
+            >
+              <div className="flex items-start space-x-4">
+                <Phone className="w-6 h-6 text-primary mt-1" />
+                <div>
+                  <h2 className="text-xl font-serif mb-2">Telefonszám</h2>
+                  <a 
+                    href="tel:+3612181475" 
+                    className="text-gray-600 hover:text-primary transition-colors text-lg"
+                  >
+                    +36 1 218 14 75
+                  </a>
+                </div>
               </div>
-            </div>
+
+              <div className="flex items-start space-x-4">
+                <MapPin className="w-6 h-6 text-primary mt-1" />
+                <div>
+                  <h2 className="text-xl font-serif mb-2">Címünk</h2>
+                  <a 
+                    href="https://maps.app.goo.gl/bieit55ZaYeatoB36"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-primary transition-colors text-lg"
+                  >
+                    1201 Budapest,<br />
+                    Vörösmarty utca 28b
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <Mail className="w-6 h-6 text-primary mt-1" />
+                <div>
+                  <h2 className="text-xl font-serif mb-2">E-mail</h2>
+                  <a 
+                    href="mailto:info@vinylgrafik.hu"
+                    className="text-gray-600 hover:text-primary transition-colors text-lg"
+                  >
+                    info@vinylgrafik.hu
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Map */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="relative aspect-square md:aspect-video w-full"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.0028872835235!2d19.089435776892382!3d47.45459709608161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c37167650b6d%3A0x1b449e37c34c4c9!2zVsO2csO2c21hcnR5IHUuIDI4YiwgQnVkYXBlc3QsIDEyMDE!5e0!3m2!1sen!2shu!4v1710425847955!5m2!1sen!2shu"
+                width="100%"
+                height="100%"
+                style={{ border: 0, borderRadius: '0.75rem' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="shadow-lg"
+              />
+            </motion.div>
           </div>
-        </div>
-        </div>
     </section>
   );
 };

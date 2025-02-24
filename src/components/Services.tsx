@@ -94,7 +94,7 @@ const Services = () => {
       <section className="bg-primary">
         <div className="mx-auto">
           <div className="flex flex-col lg:flex-row gap-8">
-            <div className="w-full lg:w-1/2 p-24">
+            <div className="w-full lg:w-1/2 lg:p-24 md:px-16 px-4 py-16">
               <div className="text-left mb-16 ">
                 <motion.h2
                   initial={{ opacity: 0, y: 20 }}

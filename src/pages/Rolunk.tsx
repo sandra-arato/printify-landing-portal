@@ -4,6 +4,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
 import ceramic from "../assets/ceramic.avif";
+import MetaTags from "@/components/MetaTags";
 
 const Rolunk = () => {
   const { scrollYProgress } = useScroll();
@@ -21,6 +22,12 @@ const Rolunk = () => {
 
   return (
     <div className="relative">
+      <MetaTags 
+        title="Rólunk"
+        description="Ismerje meg a Vinyl Grafik Stúdiót. Több éves szakmai tapasztalat, modern technológia és kreatív megoldások egy helyen."
+        image={ceramic}
+        path="/rolunk"
+      />
       <Navigation />
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-accent origin-left z-50"

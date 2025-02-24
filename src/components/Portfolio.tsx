@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import nyirfa from "../assets/1.png";
+import nyirfa from "../assets/3.png";
 import isb from "../assets/2.png";
-import oltokozpont from "../assets/3.png";
+import oltokozpont from "../assets/1.png";
 import { Link } from "react-router-dom";
 
 const projects = [
@@ -13,7 +13,7 @@ const projects = [
     keyword: "nyirfacukor",
   },
   {
-    title: "IBS",
+    title: "ISB",
     category: "Oktatás",
     description: "Ablakdekoráció, közterületi táblák és egyéb belső dekorációk",
     image: isb,

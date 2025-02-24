@@ -5,6 +5,7 @@ import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import Navigation from "../components/Navigation";
 import { motion, useScroll, useSpring } from "framer-motion";
+import MetaTags from "@/components/MetaTags";
 
 const Index = () => {
   const { scrollYProgress } = useScroll();
@@ -15,11 +16,16 @@ const Index = () => {
   });
 
   useEffect(() => {
-    document.title = "Digital Printing Services | Premium Quality Prints";
+    document.title = "Vinyl Grafik Stúdió | Látványos dekor megoldások";
   }, []);
 
   return (
     <div className="relative">
+      <MetaTags 
+        title="Vinyl Grafik Stúdió | Látványos dekor megoldások"
+        description="Vinyl Grafik Stúdió - Professzionális nyomdaipari és dekorációs megoldások. Nagyformátumú nyomtatás, autófóliázás, gravírozás és egyéb szolgáltatások."
+        path="/"
+      />
       <Navigation />
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-accent origin-left z-50"
