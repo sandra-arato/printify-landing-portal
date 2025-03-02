@@ -50,16 +50,16 @@ const Oltokozpont = () => {
             
             <div className="prose prose-lg">
               <p className="text-lg text-gray-600 pb-4">
-                Az Oltóközpont projekt különleges kihívást jelentett számunkra, hiszen a pandémia idején kellett gyorsan és hatékonyan létrehoznunk egy olyan vizuális rendszert, amely egyszerre professzionális és megnyugtató környezetet teremt az oltásra érkezők számára.
+                A Nemzetközi Oltóközpont olyan intézmény, amely a nemzetközi utazók és a különböző oltásokat igénylő személyek számára biztosít oltásokat és tanácsokat.
               </p>
               <p className="text-lg text-gray-600 pb-4">
-                A konténerek külső dekorációjánál fontos szempont volt az egységes, tiszta megjelenés mellett az információk egyértelmű kommunikálása. A nagy méretű feliratozások és útmutatók segítették a páciensek tájékozódását, míg a választott színvilág a bizalom és a professzionalizmus érzetét erősítette.
+                A különböző grafikai projektekkel keresnek meg minket, amelyek széles spektrumot ölelnek fel, a hagyományos nyomtatott anyagoktól kezdve a digitális vizuális megoldásokig.
               </p>
               <p className="text-lg text-gray-600 pb-4">
-                A projekt során nem csak a külső dekorációra, hanem a belső terek kialakítására is nagy hangsúlyt fektettünk. Az oltópontok jelölései, a várakozási területek és az információs táblák mind-mind úgy lettek kialakítva, hogy segítsék a gördülékeny betegellátást és csökkentsék a várakozással járó stresszt.
+                Alternatívát nyújtunk különböző grafikai termékek gyártására, amelyek széleskörű alkalmazási lehetőségeket biztosítanak. Legyen szó oltási kiskönyvek tervezéséről és kivitelezéséről, plakátok, megállító táblák, autó- vagy buszgrafikák készítéséről, mobil konténerek dekorálásáról, vagy akár plasztikus világító betűk elhelyezéséről épületük homlokzatán, mindig a legmagasabb minőséget biztosítjuk.
               </p>
               <p className="text-lg text-gray-600 pb-4">
-                A változó adatú nyomtatás technológiájának köszönhetően rugalmasan tudtuk kezelni az egyes oltópontok egyedi információs anyagait, miközben megtartottuk az egységes arculati megjelenést. Ez a megoldás lehetővé tette, hogy minden helyszín a saját speciális igényeinek megfelelő tájékoztatást kapjon.
+                Célunk, hogy minden egyes projekt során kreatív, figyelemfelkeltő és egyedi megoldásokat kínáljunk, amelyek erősítik a vizuális kommunikációt és hatékonyan közvetítik az üzeneteket.
               </p>
             </div>
           </motion.div>

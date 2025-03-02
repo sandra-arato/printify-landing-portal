@@ -50,16 +50,16 @@ const ISB = () => {
             
             <div className="prose prose-lg">
               <p className="text-lg text-gray-600 pb-4">
-                Az International School of Budapest (ISB) egy nemzetközi oktatási intézmény, amely magas színvonalú oktatást biztosít a Magyarországon élő külföldi és magyar diákok számára. Az iskola modern szemléletű oktatási programja és multikulturális környezete egyedülálló tanulási lehetőséget kínál a diákoknak.
+                Az International School of Budapest új helyszínre költözött.
               </p>
               <p className="text-lg text-gray-600 pb-4">
-                Egy iskola felújítása után igazán különleges kihívást jelentett számunkra a dekorációs elemek gyártása és kihelyezése. Amikor megkaptuk a feladatot, már tudtuk, hogy nem csupán egy egyszerű dekorációról van szó, hanem egy olyan projektről, ami formálja a diákok és tanárok mindennapjait. A belsőépítészekkel való szoros együttműködésünk alatt egy igazán inspiráló koncepció született, amely a modern és a hagyományos elemeket ötvözte, hogy friss, mégis otthonos környezetet teremtsen.
+                Az iskola felújítása után igazán különleges feladatot jelentett számunkra a dekorációs elemek gyártása és kihelyezése.A projekt célja az International School of Budapest új helyszínének belső terei és külső megjelenése közötti harmonikus összhang megteremtése volt.
               </p>
               <p className="text-lg text-gray-600 pb-4">
-A belső ajtótáblák és a folyosókra tervezett feliratok nemcsak tájékoztatták az iskolai közösséget, hanem a kreativitás és az együttműködés szellemét is közvetítették. A kirakatok grafikái szintén izgalmas kihívást adtak, hiszen célunk az volt, hogy a diákokat már kívülről megszólítsuk és bemutassuk az iskola dinamikus és kreatív oldalát.
+                A belsőépítészekkel való szoros együttműködés során egy olyan inspiráló koncepció jött létre, amely a kreativitás és az együttműködés szellemét helyezte a fókuszba. A tervezés célja az volt, hogy a terek ne csak esztétikai élményt nyújtsanak, hanem támogassák a közösségi interakciókat és ösztönözzék a diákokat és tanárokat a közös gondolkodásra. Az iskola minden egyes részlete, a dekorációtól kezdve a praktikus elemekig, azt az üzenetet közvetítette, hogy a tanulás nemcsak a tudás megszerzéséről szól, hanem a kreatív, együttműködő folyamatokban való részvételről is.
               </p>
-              <p>                A végén, amikor a projekt teljesen elkészült, és az iskola közössége birtokba vette az új, színes és inspiráló teret, egy igazi sikerélményt éltünk meg. 
-</p>
+              <p className="text-lg text-gray-600 pb-4">A belső terekben elhelyezett ajtótáblák, 3D grafikák és a folyosókra tervezett feliratok nemcsak tájékoztató funkcióval bírnak, hanem az iskola közösségét is erősítik, miközben az iskolai környezet kreatív szellemét közvetítik. A kirakat grafikák különösen fontos szerepet kaptak, mivel céljuk az volt, hogy már kívülről megszólítsák a diákokat, és bemutassák az iskola dinamikus, fiatalos és innovatív oldalát.
+              </p>
             </div>
           </motion.div>
         </div>

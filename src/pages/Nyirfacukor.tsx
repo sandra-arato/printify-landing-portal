@@ -49,6 +49,12 @@ const Nyirfacukor = () => {
               <p className="text-lg text-gray-600 pb-4">
                 A Nyírfacukor Kft. egy magyar vállalat, amely főként nyírfacukor (xilit) és egyéb alternatív édesítőszerek forgalmazásával foglalkozik. A cég célja, hogy egészségesebb alternatívákat kínáljon a hagyományos cukorral szemben, különös figyelmet fordítva a természetes alapanyagok felhasználására.
               </p>
+              <p className="text-lg text-gray-600 pb-4">
+                Feladatunkként kaptuk a cég különböző reklámanyagainak gyártását.
+              </p>
+              <p className="text-lg text-gray-600 pb-4">
+                A projekt során célunk a hatékony és figyelemfelkeltő reklámanyagok előállítása volt. Elsődlegesen jármű dekorációkat készítettünk, mivel ezek ideális reklámozási eszközök, amelyek folyamatos mozgásukkal széles közönséget érnek el, és mindig új embereket szólítanak meg. Ezen kívül az eladáshelyi reklámok tervezésére és gyártására is nagy hangsúlyt fektettünk. Ezek közé tartoznak a plakátok, displayek, standok, valamint a termékekre ragasztott promóciós matricák, amelyek közvetlenül befolyásolják a vásárlói döntéseket a vásárlás helyszínén.
+              </p>
             </div>
           </motion.div>
         </div>

@@ -25,7 +25,6 @@ const Rolunk = () => {
       <MetaTags 
         title="Rólunk"
         description="Ismerje meg a Vinyl Grafik Stúdiót. Több éves szakmai tapasztalat, modern technológia és kreatív megoldások egy helyen."
-        image={ceramic}
         path="/rolunk"
       />
       <Navigation />

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import nyirfa from "../assets/1.png";
 import isb from "../assets/2.png";
 import oltokozpont from "../assets/3.png";
+import lurdy from "../assets/lurdy1.jpg";
 
 const projects = [
   {
@@ -28,6 +29,13 @@ const projects = [
     description: "Konténer dekoráció, marketing anyagok, valamint változó adatú nyomtatás",
     image: oltokozpont,
     keyword: "oltokozpont",
+  },
+  {
+    title: "Lurdy",
+    category: "Bevásárló központ",
+    description: "Üzletdekoráció, plakátok, névjegykártyák és egyéb grafikai munkák",
+    image: lurdy,
+    keyword: "lurdy",
   },
 ];
 

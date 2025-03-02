@@ -11,6 +11,9 @@ import Rolunk from "./pages/Rolunk";
 import Portfolio from "./pages/Portfolio";
 import ISB from "./pages/ISB";
 import Oltokozpont from "./pages/Oltokozpont";
+import Lurdy from "./pages/Lurdy";
+import Jelolestechnika from "./pages/Jelolestechnika";
+import Cirkusz from "./pages/Cirkusz";
 import { HelmetProvider } from 'react-helmet-async';
 
 const queryClient = new QueryClient();
@@ -27,6 +30,9 @@ const App = () => (
             <Route path="/projektek/nyirfacukor" element={<Nyirfacukor />} />
             <Route path="/projektek/international-school-of-budapest" element={<ISB />} />
             <Route path="/projektek/oltokozpont" element={<Oltokozpont />} />
+            <Route path="/projektek/lurdy-haz" element={<Lurdy />} />
+            <Route path="/projektek/jelolestechnika" element={<Jelolestechnika />} />
+            <Route path="/projektek/budapesti-nagycirkusz" element={<Cirkusz />} />
             <Route path="/rolunk" element={<Rolunk />} />
             <Route path="/referenciak" element={<Portfolio />} />
           </Routes>

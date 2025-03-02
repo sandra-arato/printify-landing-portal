@@ -2,13 +2,17 @@ import { motion } from "framer-motion";
 import nyirfa from "../assets/3.png";
 import isb from "../assets/2.png";
 import oltokozpont from "../assets/1.png";
+import lurdy from "../assets/lurdy2.jpg";
+import ipari from "../assets/ipari7.jpg";
+import cirkusz from "../assets/cirkusz1.jpg";
 import { Link } from "react-router-dom";
+
 
 const projects = [
   {
     title: "Nyírfacukor",
     category: "Kereskedelem",
-    description: "Autografika, kináló pultok és prototipusok",
+    description: "Autógrafika, kináló pultok és prototipusok",
     image: nyirfa,
     keyword: "nyirfacukor",
   },
@@ -26,6 +30,28 @@ const projects = [
     image: oltokozpont,
     keyword: "oltokozpont",
   },
+   {
+    title: "Lurdy-ház",
+    category: "Bevásárló központ",
+    description: "Üzletdekoráció, plakátok, névjegykártyák és egyéb grafikai munkák",
+    image: lurdy,
+    keyword: "lurdy-haz",
+  },
+  {
+    title: "Budapesti Nagycirkusz",
+    category: "Kultúra",
+    description: "Kreatív dekorációs megoldások és autógrafika",
+    image: cirkusz,
+    keyword: "budapesti-nagycirkusz",
+  },
+  {
+    title: "Jelöléstechnika",
+    category: "Ipar",
+    description: "Jelöléstechnika, címkézés és különböző termékek nyomtatása",
+    image: ipari,
+    keyword: "jelolestechnika",
+  },
+  
 ];
 
 const Portfolio = () => {
