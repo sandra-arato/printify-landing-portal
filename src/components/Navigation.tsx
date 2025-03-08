@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import logo from '../assets/Favicon.svg';
+import logo from '../assets/VGSLogo.svg';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -76,8 +76,7 @@ const Navigation = () => {
           {/* Logo/Home Link */}
           <Link to="/" className="font-medium" onClick={scrollToTop}>
             <div className={`flex items-center mb-12 ${isScrolled ? 'translate-y-6 opacity-100' : 'translate-y-30 opacity-0'} transition-all`}>
-              <img src={logo} alt="Vinyl Grafik Studio" className="w-4 h-auto mr-2" />
-              Vinyl Grafik Stúdió
+              <img src={logo}className="w-24 h-auto mr-2" alt="Vinyl Grafik Studio" />
             </div>
           </Link>
 

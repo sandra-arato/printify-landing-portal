@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import styles from './Hero.module.css';
-import logo from '../assets/Favicon.svg';
+import logo from '../assets/VGSLogo.svg';
 import girlBg from '../assets/ceramic.avif';
 
 const Hero = () => {
@@ -17,10 +17,10 @@ const Hero = () => {
               className="max-w-xl"
             >
               <div className="flex items-center mb-12">
-                <img src={logo} alt="Vinyl Grafik Studio" className="w-16 h-auto" />
-                <span className="text-4xl lg:text-5xl inline-block px-4 font-medium text-slate-800">
+                <img src={logo} alt="Vinyl Grafik Studio" className="w-8/12 h-auto" />
+                {/* <span className="text-4xl lg:text-5xl inline-block px-4 font-medium text-slate-800">
                   Vinyl Grafik Stúdió
-                </span>
+                </span> */}
               </div>
             
               <p className="text-lg md:text-2xl text-slate-800 mb-12 font-medium">
